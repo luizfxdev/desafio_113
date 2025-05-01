@@ -1,0 +1,33 @@
+{
+  "name": "desafio_113",
+  "version": "1.0.0",
+  "description": "Projeto para o desafio 'Decifrando o Código Secreto da Floresta Encantada'",
+  "main": "dist/script.js",
+  "scripts": {
+  "clean": "if exist \"dist\" rmdir /s /q \"dist\" && mkdir \"dist\"",
+  "build": "tsc --outDir ./dist --rootDir ./src",
+  "watch": "tsc --watch --outDir ./dist --rootDir ./src",
+  "start": "lite-server",
+  "dev": "concurrently \"npm run watch\" \"npm run start\""
+},
+  "keywords": [
+    "typescript",
+    "html",
+    "css",
+    "javascript",
+    "desafio",
+    "floresta-encantada"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "lite-server": "^2.6.1",
+    "typescript": "^5.8.3"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

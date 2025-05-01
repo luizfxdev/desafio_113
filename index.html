@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decifrando o Código da Floresta Encantada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Decifrando o Código da Floresta Encantada</h1>
+            <p class="description">
+                Para cruzar a floresta, decifre o enigma da
+                <span class="highlight">Árvore Anciã</span>, que guarda o código numérico secreto.
+            </p>
+
+            <div class="input-area">
+                <label for="input-numbers">Insira os números separados por vírgula:</label>
+                <input type="text" id="input-numbers" placeholder="Ex: 2, 3, 5, 7">
+            </div>
+
+            <div class="button-area">
+                <button id="calculate-btn" style="--clr:#39FF14"><span>Revelar </span><i></i></button>
+                <button id="reset-btn" style="--clr:#39FF14"><span>Limpar</span><i></i></button>
+            </div>
+
+            <div class="result-area" id="result-container">
+                <h2>Resultado</h2>
+                <div id="magic-number" class="magic-number"></div>
+                <div id="calculation" class="calculation"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dist/script.js"></script>
+</body>
+
+</html>
